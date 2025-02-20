@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelWizard - Professional Background Removal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Previous styles remain the same */
+
+        /* Pricing Section */
+        .pricing-section {
+            padding: 4rem 2rem;
+            background: rgba(241, 243, 246, 0.5);
+            text-align: center;
+        }
+
+        .pricing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+
+        .price-period {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            padding: 1rem 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-features i {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">PixelWizard</div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- Previous sections remain the same -->
+
+    <section class="pricing-section" id="pricing">
+        <h2>Simple, Transparent Pricing</h2>
+        <p>Choose the plan that works best for you</p>
+        
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Starter</h3>
+                <div class="price">$0<span class="price-period">/forever</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i>10 free API calls/month</li>
+                    <li><i class="fas fa-check"></i>Basic background removal</li>
+                    <li><i class="fas fa-check"></i>Community support</li>
+                </ul>
+                <button class="btn">Get Started</button>
+            </div>
+
+            <div class="pricing-card" style="border: 2px solid var(--primary);">
+                <h3>Professional</h3>
+                <div class="price">$29<span class="price-period">/month</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i>500 API calls/month</li>
+                    <li><i class="fas fa-check"></i>HD quality removal</li>
+                    <li><i class="fas fa-check"></i>Priority support</li>
+                    <li><i class="fas fa-check"></i>Batch processing</li>
+                </ul>
+                <button class="btn">Start Free Trial</button>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Business</h3>
+                <div class="price">$99<span class="price-period">/month</span></div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i>2000 API calls/month</li>
+                    <li><i class="fas fa-check"></i>Premium quality removal</li>
+                    <li><i class="fas fa-check"></i>24/7 support</li>
+                    <li><i class="fas fa-check"></i>Custom integrations</li>
+                    <li><i class="fas fa-check"></i>Team management</li>
+                </ul>
+                <button class="btn">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // In the processImage function, API key replaced with yours:
+        headers: {
+            'X-Api-Key': '8EePZraUQ6LEfBwHCUeHtthk'
+        },
+    </script>
+</body>
+</html>
